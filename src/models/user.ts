@@ -1,7 +1,7 @@
 import { model, connect, Mongoose } from "mongoose";
 import mongoose from "mongoose";
 
-interface User {
+interface user {
   name: string;
   email: string;
   password: string;
@@ -9,7 +9,7 @@ interface User {
 
 const { Schema } = mongoose;
 
-const userSchema = new Schema<User>(
+const userSchema = new Schema<user>(
   {
     name: { type: String, required: true, unique: true },
     email: { type: String, required: true, unique: true },
