@@ -60,7 +60,7 @@ const BlogId = async ({ params }: BlogIdProps): Promise<ReactElement> => {
           <div className={styles.author}>
             <Image
               src={data.img}
-              alt=""
+              alt="Чел из ГТА"
               width={40}
               height={40}
               className={styles.avatar}

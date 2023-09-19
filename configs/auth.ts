@@ -20,21 +20,6 @@ export const authConfig: AuthOptions = ({
 
       async authorize(credentials: any ) {
         await connect();
-      
-        // метод 1
-      //   if(!credentials?.email || !credentials.password) return null;
-
-      // const currentUser = users.find(user => user.email === credentials.email)
-
-      // if (currentUser && currentUser.password === credentials.password) {
-      //   const { password, ...userWithoutPass } = currentUser;
-
-      //   return userWithoutPass as User;
-      // }
-      
-      // return null
-
-
 
         // метод 2
         try {
@@ -63,6 +48,6 @@ export const authConfig: AuthOptions = ({
     }),
   ],
   pages: {
-    error: "auth/signin",
+    signIn: '/signin',
   },
 });
