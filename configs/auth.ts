@@ -14,12 +14,15 @@ export const authConfig: AuthOptions = ({
     }),
     Credentials({
       credentials: {
-        email: { label: "email", type: "email", required: true },
+        email: { label: "email", type: "email", required: true, placeholder: 'test1234@mail.ru' },
         password: { label: "password", type: "password", required: true },
+        
       },
 
       async authorize(credentials: any ) {
         await connect();
+        if (!credentials || !credentials.email || !credentials.password)
+        return null
 
         // метод 2
         try {
@@ -49,5 +52,6 @@ export const authConfig: AuthOptions = ({
   ],
   pages: {
     signIn: '/signin',
+    error: '/signin'
   },
 });
