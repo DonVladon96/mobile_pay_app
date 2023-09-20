@@ -1,52 +1,37 @@
 import Button from "@/component/button/Button";
 import styles from "./page.module.css";
 import Image from "next/image";
+import AboutMe from '@/component/AboutMe/AboutMe'
+import GTA from '../../../public/GTA_2314641931.png'
 
 const About = () => {
+  
   return (
     <div className={styles.container}>
+      <AboutMe/>
       <div className={styles.imgContainer}>
         <Image
-          src="https://masterpiecer-images.s3.yandex.net/a2babe1750de11ee935a963c1ee369ba:upscaled"
+          src={GTA}
           fill={true}
           alt="about us"
           className={styles.img}
         />
         <div className={styles.imgText}>
-          <h1 className={styles.imgTitle}>Lorem ipsum dolor sit</h1>
+          <h1 className={styles.imgTitle}>Похож на парня сверху? Нет?</h1>
           <h2 className={styles.imgDesc}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            А  так меня видит нейросеть по примеру игры Grand Theft Auto (GTA vice city)
           </h2>
         </div>
       </div>
+      
 
       <div className={styles.textContainer}>
-        <div className={styles.item}>
-          <h1 className={styles.title}>Who Are We?</h1>
-          <p className={styles.desc}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            quae dolor, optio voluptatibus magnam iure esse tempora beatae. A
-            suscipit eos. Animi quibusdam cum omnis officiis voluptatum quo ea
-            eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Ducimus quae dolor, optio voluptatibus magnam iure esse tempora
-            beatae, a suscipit eos. Animi quibusdam cum omnis officiis
-            <br />
-            <br />
-            voluptatum quo ea eveniet? Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Ducimus quae dolor, optio voluptatibus magnam iure
-            esse tempora beatae, a suscipit eos. Animi quibusdam cum omnis
-            officiis voluptatum quo ea eveniet?
-          </p>
-        </div>
+      
 
         <div className={styles.item}>
           <h1 className={styles.title}>What We Do?</h1>
           <p className={styles.desc}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            quae dolor, optio voluptatibus magnam iure esse tempora beatae, a
-            suscipit eos. Animi quibusdam cum omnis officiis voluptatum quo ea
-            eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. -
-            Creative Illustrations
+            
             <br />
             <br /> - Dynamic Websites
             <br />
