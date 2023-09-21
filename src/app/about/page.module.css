@@ -40,3 +40,13 @@
     font-weight: 300;
     text-align: justify;
   }
+
+  .BtnGoProfile {
+    padding: 20px;
+    cursor: pointer;
+    background-color: #53c28b;
+    border: none;
+    border-radius: 5px;
+    width: max-content;
+    color: white;
+  }
