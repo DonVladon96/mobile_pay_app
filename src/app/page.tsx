@@ -1,19 +1,20 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Button from "@/component/button/Button";
 import Hero from '../../public/hero.png'
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className={styles.container}>
       <div className={styles.item}>
-        <h1 className={styles.title}>The Future of AI in next few years</h1>
+        <h1 className={styles.title}>Добро пожаловать на мою личную страничку</h1>
         <p className={styles.desc}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, iste
-          nulla ipsum libero in accusantium error aut, nobis amet nisi delectus
-          illo. Eos maiores voluptatibus in consectetur. Est, quia corporis?
+         Здесь вы узнаете обо мне больше. После регистрации вас ждет сюрприз. А так же есть формочки для оплаты мобильной связи.
         </p>
-        <Button text="Посмотреть другие работы" url="/portfolio"/>
+        <Link href='/portfolio' className={styles.linkBtn}>
+        <button className={styles.BtnGoProfile}>Посмотреть другие работы</button>
+    </Link>
+        
       </div>
       <div className={styles.item}>
         <Image src={Hero} alt={"Hero"} className={styles.img}/>

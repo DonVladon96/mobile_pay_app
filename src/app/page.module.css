@@ -4,6 +4,21 @@
   gap: 100px;
 }
 
+.BtnGoProfile {
+  padding: 20px;
+  cursor: pointer;
+  background-color: #53c28b;
+  border: none;
+  border-radius: 5px;
+  width: max-content;
+  color: white;
+}
+
+.linkBtn {
+  max-width: 208px;
+}
+
+
 .item {
   flex: 1;
   display: flex;

@@ -8,7 +8,7 @@ type ButtonProps = {
 
 const Button: React.FC<ButtonProps> = ({text, url}) => {
   return (
-    <Link href={url}>
+    <Link href={url} target='_blank'>
         <button className={styles.container}>{text}</button>
     </Link>
   )

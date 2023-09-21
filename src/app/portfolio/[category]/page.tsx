@@ -1,7 +1,5 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-
-// import { items } from './data'
 import { notFound } from "next/navigation";
 import Button from "@/component/button/Button";
 import { items } from "./data";
@@ -12,6 +10,7 @@ interface Item {
   title: string;
   desc: string;
   image: string;
+  url: string;
 }
 
 type Categories = "applications" | "illustrations" | "websites";
@@ -39,7 +38,7 @@ const Category: React.FC<{ params: { category: Categories } }> = ({
          <div className={styles.content}>
            <h1 className={styles.title}>{item.title}</h1>
            <p className={styles.desc}>{item.desc}</p>
-           <Button text="See More" url="#" />
+           <Button text="See More" url={item.url}  />
          </div>
          <div className={styles.imgContainer}>
            <Image
