@@ -1,5 +1,5 @@
 export const items = {
-    applications: [
+  MobilePay: [
       {
         id: 1,
         title: "Creative Portfolio",
