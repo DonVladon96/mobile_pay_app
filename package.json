@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@alfalab/core-components-amount-input": "^7.4.7",
     "@alfalab/core-components-intl-phone-input": "^9.5.11",
     "@alfalab/core-components-phone-input": "^7.2.8",
     "@types/node": "20.6.2",
