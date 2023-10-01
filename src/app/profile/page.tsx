@@ -10,7 +10,7 @@ export default async function Profile() {
   return (
     <>
       <div className={styles.imgContainer}>
-        {session?.user?.image && <Image src={session?.user?.image} alt="" className={styles.imgProfile} />}
+        {session?.user?.image && <Image src={session?.user?.image} width={100} height={100} priority={false} alt="" className={styles.imgProfile} />}
         <h1>Profile of {session?.user?.name}</h1>
         <h2>Тестирую новый подход в Next Js + библиотеку Auth Js</h2>
         <h2>

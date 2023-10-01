@@ -42,7 +42,7 @@ function AmountInputFunc() {
 
       <div style={{  border: "solid 2px green", borderRadius: '10px', padding: "10px" , opacity: '1' }} >
         {suggests.map((s) => (
-          <button onClick={() => setValue(s.value as number)}>
+          <button key={s.value} onClick ={() => setValue(s.value as number)}>
             Установить {String(s.value)}
           </button>
         ))}
