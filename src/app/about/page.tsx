@@ -1,7 +1,6 @@
-import Button from "@/component/button/Button";
 import styles from "./page.module.css";
 import Image from "next/image";
-import AboutMe from '@/component/AboutMe/AboutMe'
+import AboutMe from '../../component/AboutMe/AboutMe'
 import GTA from '../../../public/GTA_2314641931.png'
 import Link from "next/link";
 

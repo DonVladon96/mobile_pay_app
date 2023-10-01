@@ -1,4 +1,3 @@
-import { model, connect, Mongoose } from "mongoose";
 import mongoose from "mongoose";
 
 interface user {
