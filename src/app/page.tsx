@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Hero from "../../public/acetone-2023921-133318-608.png";
+import Hero from "../Image/public/acetone-2023921-133318-608.png";
 import Link from "next/link";
 
 export default function Home() {

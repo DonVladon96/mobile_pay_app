@@ -1,9 +1,9 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 import Image from "next/image";
-import Telegram from "../../../public/Telegram_logo.svg.webp";
-import Instagramm from "../../../public/inst.avif";
-import Gmail from "../../../public/Gmail-logo.png";
+import Telegram from "../../Image/public/Telegram_logo.svg.webp";
+import Instagramm from "../../Image/public/inst.avif";
+import Gmail from "../../Image/public/Gmail-logo.png";
 
 const Footer = () => {
   return (

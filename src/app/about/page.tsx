@@ -1,11 +1,11 @@
 import styles from "./page.module.css";
 import Image from "next/image";
 import AboutMe from '../../component/AboutMe/AboutMe'
-import GTA from '../../../public/GTA_2314641931.png'
+import GTA from '../../Image/public/GTA_2314641931.png'
 import Link from "next/link";
 
 const About = () => {
-  
+
   return (
     <div className={styles.container}>
       <AboutMe/>
@@ -25,12 +25,12 @@ const About = () => {
           </h3>
         </div>
       </div>
-      
+
 
       <div className={styles.textContainer}>
-      
+
         <div className={styles.item}>
-        
+
           <h3 className={styles.title}>Why me? Because I create...</h3>
           <p className={styles.desc}>
             <br /> - Dynamic Websites

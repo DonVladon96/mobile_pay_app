@@ -1,7 +1,7 @@
 import { getServerSession } from "next-auth";
 import { authConfig } from "../../../configs/auth";
 import Image from "next/image";
-import Stonks from "../../../public/strong.jpg";
+import Stonks from "../../Image/public/strong.jpg";
 import styles from "./page.module.css"
 
 export default async function Profile() {
@@ -10,7 +10,7 @@ export default async function Profile() {
   return (
     <>
       <div className={styles.imgContainer}>
-        {session?.user?.image && <img src={session?.user?.image} alt="" className={styles.imgProfile} />}
+        {session?.user?.image && <Image src={session?.user?.image} alt="" className={styles.imgProfile} />}
         <h1>Profile of {session?.user?.name}</h1>
         <h2>Тестирую новый подход в Next Js + библиотеку Auth Js</h2>
         <h2>

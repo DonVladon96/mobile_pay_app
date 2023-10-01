@@ -24,13 +24,13 @@
   }
   
   .item:nth-child(1) {
-    background: url("/illustration.png");
+    background: url("../../Image/public/illustration.png");
   }
   .item:nth-child(2) {
-    background: url("/websites.jpg");
+    background: url("../../Image/public/websites.jpg");
   }
   .item:nth-child(3) {
-    background: url("/apps.jpg");
+    background: url("../../Image/public/apps.jpg");
   }
   
   .title {

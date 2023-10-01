@@ -13,7 +13,7 @@ interface Item {
   url: string;
 }
 
-type Categories = "applications" | "illustrations" | "websites";
+type Categories = "websites";
 
 const getData = (cat: Categories): Item[] => {
   const data = items[cat];
