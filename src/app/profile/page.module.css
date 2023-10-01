@@ -1,0 +1,15 @@
+.img {
+    object-fit:contain;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.imgProfile {
+    width: 100px;
+    height: 100px;
+}
+
+.imgContainer {
+    display: flex;
+    flex-direction: column;
+}

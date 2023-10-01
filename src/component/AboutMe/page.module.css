@@ -1,0 +1,207 @@
+.aboutme__container {
+    padding-top: 110px;
+    padding-bottom: 101px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.aboutme__info {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+.aboutme__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutme__title {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    letter-spacing: -0.88px;
+    font-weight: 400;
+    line-height: 27px;
+    padding-top: 0;
+    padding-bottom: 23px;
+    margin: 0;
+    margin-bottom: 66px;
+    border-bottom: 1px solid #DADADA;
+    color: #35dd0f;
+}
+
+.aboutme__avatar {
+    margin-left: auto;
+    width: 270px;
+    height: 327px;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+
+.aboutme__name {
+    color: #35dd0f;
+    max-width: 600px;
+    font-size: 50px;
+    font-family: 'Inter', Arial, sans-serif;
+    line-height: 58px;
+    letter-spacing: -2px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 18px;
+}
+
+.aboutme__job {
+    max-width: 600px;
+    color: #35dd0f;
+    font-size: 18px;
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+    font-style: normal;
+    margin: 0;
+    margin-bottom: 26px;
+}
+
+.aboutme__biography {
+    max-width: 600px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #35dd0f;
+    margin: 0;
+    margin-bottom: 100px;
+
+}
+
+.aboutme__github {
+    color: #35dd0f;
+    font-size: 14px;
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 17px;
+    text-decoration: none;
+    text-align: center;
+    max-width: 46px;
+}
+
+.aboutme__github:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    transition: .7s ease-in-out;
+    color: #000;
+    text-decoration: none;
+    background-color: #2BE080;
+    border-radius: 3px;
+    max-width: 46px;
+    text-align: center;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 769px) {
+    .aboutme__container {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 80px;
+        padding-bottom: 91px;
+    }
+
+    .aboutme__name {
+        color: #FFF;
+        font-family: 'Inter', Arial, sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: -1.6px;
+    }
+
+    .aboutme__avatar {
+        width: 255px;
+        height: 307px;
+    }
+
+    .aboutme__name {
+        margin-bottom: 16px;
+    }
+
+    .aboutme__job {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 21px;
+    }
+
+    .aboutme__biography {
+        font-size: 12px;
+        font-style: normal;
+        line-height: 18px;
+        margin-bottom: 105px;
+    }
+
+    .aboutme__github {
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .aboutme__container {
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 78px;
+        padding-bottom: 70px;
+    }
+
+    .aboutme__title {
+        font-size: 18px;
+        line-height: normal;
+        letter-spacing: -0.72px;
+        padding-bottom: 28px;
+        margin-bottom: 60px;
+    }
+
+    .aboutme__avatar {
+        width: 292px;
+        height: 352px;
+        flex-shrink: 0;
+    }
+
+    .aboutme__name {
+        font-size: 30px;
+        line-height: normal;
+        letter-spacing: -1.2px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .aboutme__job {
+        font-size: 11px;
+        line-height: 16px;
+        margin-bottom: 20px;
+    }
+
+    .aboutme__biography {
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 16px;
+        color: #FFF;
+        font-style: normal;
+        margin-bottom: 40px;
+    }
+
+    .aboutme__wrapper {
+        flex-direction: column-reverse;
+    }
+}
+
+
+
+
+
