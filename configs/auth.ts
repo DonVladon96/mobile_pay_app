@@ -49,6 +49,7 @@ export const authConfig: AuthOptions = ({
       },
     }),
   ],
+  secret: "Don_Vladon_Super_Man",
   pages: {
     signIn: '/signin',
     error: '/signin'
