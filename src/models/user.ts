@@ -8,7 +8,7 @@ interface User {
 
 const { Schema } = mongoose;
 
-const userSchema = new Schema<User>(
+const User = new Schema<User>(
   {
     name: { type: String, required: true, unique: true },
     email: { type: String, required: true, unique: true },
@@ -17,4 +17,4 @@ const userSchema = new Schema<User>(
   { timestamps: true }
 );
 
-export default mongoose.models.User || mongoose.model("User", userSchema);
+export default mongoose.models.User || mongoose.model("User", User);
