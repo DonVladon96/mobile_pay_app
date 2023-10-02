@@ -12,9 +12,11 @@ const SignInForm = () => {
   const params = useSearchParams();
   const [success, setSuccess] = useState("");
 
-  const handleClick = () => {
-    signIn("google");
-  };
+  const handleClick = async() => {
+    await signIn('google')
+    router.push("/profile");
+    
+  }
 
   const handleSubmit: FormEventHandler<HTMLFormElement> = async (event) => {
     event.preventDefault();
