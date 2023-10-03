@@ -1,0 +1,21 @@
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 16px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card {
+    list-style-type:none;
+
+}

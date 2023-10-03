@@ -15,7 +15,6 @@ const SignInForm = () => {
   const handleClick = async() => {
     await signIn('google')
     router.push("/profile");
-    
   }
 
   const handleSubmit: FormEventHandler<HTMLFormElement> = async (event) => {
