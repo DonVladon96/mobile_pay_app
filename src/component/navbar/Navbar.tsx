@@ -5,6 +5,7 @@ import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
 import { signOut, useSession, signIn } from "next-auth/react";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 type NavLink = {
   lable: string;
@@ -41,20 +42,21 @@ const Navbar = ({ navLinks }: Props) => {
 
   return (
     <header className={styles.header}>
-      <nav className={styles.container}>
+      <div className={styles.container}>
         <div className={styles.box}>
           <div className={styles.logo_image}>
-          <Link href="/" className={styles.logo}>
-            MyApp
-          </Link>
+            <Link href="/" className={styles.logo}>
+              MyApp
+            </Link>
           </div>
          
-
-          <div className={
-              nav ? [styles.links, styles.active].join(" ") : [styles.links]
-            }>
-            <DarkModeToggle />
-
+          <div
+            className={
+              nav ? [styles.links, styles.active].join(" ") : styles.links
+            }
+          >
+             <DarkModeToggle />
+           
             {links.map((link) => (
               <Link key={link.id} href={link.url}>
                 {link.title}
@@ -78,8 +80,11 @@ const Navbar = ({ navLinks }: Props) => {
               <Link href="/signin">Войти</Link>
             )}
           </div>
+          <div onClick={() => setNav(!nav)} className={styles.mobile_btn}>
+            {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
+          </div>
         </div>
-      </nav>
+      </div>
     </header>
   );
 };
