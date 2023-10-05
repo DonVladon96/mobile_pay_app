@@ -40,3 +40,32 @@
 .desc{
   font-size: 20px;
 }
+
+
+@media screen and (max-width: 800px){
+  .title {
+    font-size: 30px;
+  }
+
+  .desc {
+  font-size: 15px;
+  }
+
+  .item {
+  flex-direction: column;
+  }
+
+  .item:nth-child(2n+1){
+    flex-direction: column;
+  }
+
+  .imgContainer {
+  flex:auto;
+  }
+
+  .img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+}

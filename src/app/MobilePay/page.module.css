@@ -126,9 +126,15 @@
     background-color: #2BE080;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 860px) {
     .navtab {
         margin-top: 314px;
+
+        display: grid;
+        grid-template-columns: 84px 84px;
+        margin-top: 51px;
+        grid-column-gap: 70px;
+        grid-row-gap: 30px;
     }
 
     .navtab__button {
@@ -141,12 +147,25 @@
 }
 
 @media screen and (max-width: 530px) {
-    .navtab {
-        gap: 6px;
-        margin-top: 212px;
-    ;
-
+    .title {
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 500;
     }
+
+    .navtab {
+      gap: 6px;
+      margin-top: 212px;
+      display: grid;
+      grid-template-columns: 70px 80px;
+      margin-top: 50px;
+      grid-column-gap: 30px;
+      grid-row-gap: 20px;
+    }
+
+    .container {
+      padding: 10px;
+    }   
 
     .navtab__button {
         color: #FFF;
