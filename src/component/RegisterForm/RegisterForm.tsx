@@ -27,7 +27,7 @@ const RegisterForm = () => {
           password,
         }),
       });
-      res.status === 201 && router.push("/profile?success=Account has been created");
+      res.status === 201 && router.push("/profile");
     } catch (err) {
       setError("Что нибудь не так?");
       console.log(err);
