@@ -16,17 +16,29 @@ export const POST = async (request: any) => {
     password: hashedPassword,
   });
 
+  // мой метод
+  // try {
+  //   await newUser.save();
+  //   return NextResponse.json({
+  //     message: 'User has been created!'
+  //   })
+  // } catch (error) {
+  //   // degug error
+  //   console.log('error', error);
+  //   return NextResponse.json(error, {
+  //     status: 500
+  //   })
+  // }
+
   try {
     await newUser.save();
-    return NextResponse.json({
-      message: 'User has been created!'
-    })
+    return new NextResponse("User has been created", {
+      status: 201,
+    });
   } catch (error) {
-    // degug error
-    console.log('error', error);
-    return NextResponse.json(error, {
-      status: 500
-    })
+    return new NextResponse(error.message, {
+      status: 500,
+    });
   }
 };
 

@@ -7,6 +7,7 @@ import AmountInputFunc from "@/component/AmountInput/AmountInput";
 import MobilePayForm from "@/component/MobilePayForm/MobilePayForm";
 import { useRouter } from "next/navigation";
 import icon from '../../../Image/public/back-icon.png'
+import ButtonBack from "@/component/ButtonBack/ButtonBack";
 
 
 interface Params {
@@ -40,9 +41,7 @@ const Category: React.FC<CategoryProps> = ({ params }) => {
 
   return (
     <div className={styles.container}>
-      <button onClick={handleClick} className={styles.button}>
-       <Image src={icon} alt={"Ручка назад"}></Image>
-      </button>
+     <ButtonBack/>
       {data.map((item) => (
         <div className={styles.item} key={item.id}>
           <div className={styles.content}>
