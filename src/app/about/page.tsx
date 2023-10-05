@@ -1,49 +1,42 @@
 import styles from "./page.module.css";
 import Image from "next/image";
-import AboutMe from '../../component/AboutMe/AboutMe'
-import GTA from '../../Image/public/GTA_2314641931.png'
+import AboutMe from "../../component/AboutMe/AboutMe";
+import GTA from "../../Image/public/GTA_2314641931.png";
 import Link from "next/link";
 
 const About = () => {
-
   return (
     <div className={styles.container}>
-      <AboutMe/>
-      <h1>Это приложение написано на Next Js + Type Script, а так же Backend база данных на Mongo DB</h1>
+      <AboutMe />
       <br />
       <div className={styles.imgContainer}>
-        <Image
-          src={GTA}
-          fill={true}
-          alt="about us"
-          className={styles.img}
-        />
-        <div className={styles.imgText}>
-          <h2 className={styles.imgTitle}>Немного креатива)))<br />Похож на парня сверху? Нет?</h2>
-          <h3 className={styles.imgDesc}>
-            А  так меня видит меня нейросеть по примеру игры Grand Theft Auto (GTA vice city)
-          </h3>
-        </div>
+        <section className={styles.techs} id="techs">
+          <div className={styles.techs__container}>
+            <h2 className={styles.techs__title}>Технологий</h2>
+            <h3 className={styles.techs__subtitle}>Реализация</h3>
+            <p className={styles.techs__about}>
+              В повседневной веб-разработке я освоили технологии, которые
+              применил в этом проекте.
+            </p>
+            <ul className={styles.techs__items}>
+              <li className={styles.techs__item}>HTML+CSS</li>
+              <li className={styles.techs__item}>JS</li>
+              <li className={styles.techs__item}>Next JS</li>
+              <li className={styles.techs__item}>React</li>
+              <li className={styles.techs__item}>Git</li>
+              <li className={styles.techs__item}>Type Script</li>
+              <li className={styles.techs__item}>mongoDB</li>
+            </ul>
+          </div>
+        </section>
       </div>
-
-
       <div className={styles.textContainer}>
-
         <div className={styles.item}>
-
-          <h3 className={styles.title}>Why me? Because I create...</h3>
-          <p className={styles.desc}>
-            <br /> - Dynamic Websites
-            <br />
-            <br /> - Fast and Handy
-            <br />
-            <br /> - Mobile Apps
-          </p>
           <Link href="/portfolio" className={styles.linkBtn}>
-          <button className={styles.BtnGoProfile}>
-           View Portfolio
-          </button>
-        </Link>
+            <button className={styles.BtnGoProfile}>
+              Посмотреть мои работы
+            </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,8 +1,6 @@
 
 .imgContainer {
     width: 100%;
-    height: 700px;
-    position: relative;
   }
   
   .img {
@@ -50,3 +48,200 @@
     width: max-content;
     color: white;
   }
+
+  .techs {
+    display: flex;
+    flex-direction: column;
+}
+
+.techs__container {
+    padding-top: 0;
+    padding-bottom: 100px;
+    padding-left: 70px;
+    padding-right: 70px;
+    background: #272727;
+}
+
+.techs__title {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    letter-spacing: -0.88px;
+    font-weight: 400;
+    line-height: 27px;
+    padding-top: 0;
+    padding-bottom: 23px;
+    padding-top: 20px;
+    margin: 0;
+    border-bottom: 1px solid #DADADA;
+    color: #FFF;
+   
+}
+
+.techs__subtitle {
+    margin-top: 90px;
+    margin-bottom: 26px;
+    color: #FFF;
+    text-align: center;
+    font-size: 50px;
+    line-height: 58px;
+    letter-spacing: -2px;
+    font-weight: 400;
+}
+
+.techs__about {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Inter', Arial, sans-serif;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: -0.56px;
+    display: flex;
+    width: 460px;
+    flex-direction: column;
+    margin: auto;
+}
+
+.techs__items {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: 100px;
+}
+
+.techs__item {
+    border-radius: 10px;
+    background: #303030;
+    width: 90px;
+    height: 60px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Inter', Arial, sans-serif;
+    letter-spacing: -0.56px;
+    font-weight: 400;
+    line-height: 17px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.techs__item:hover {
+    cursor: default;
+    transition: .7s ease-in-out;
+    color: #000;
+    background-color: #2BE080;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 769px) {
+    .techs__container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .techs__subtitle {
+        margin-top: 80px;
+        margin-bottom: 22px;
+
+    }
+
+    .techs__about {
+        font-size: 12px;
+        font-style: normal;
+        line-height: 18px;
+        letter-spacing: -0.48px;
+    }
+
+    .techs__items {
+        margin-top: 83px;
+    }
+
+    .techs__item {
+        color: #FFF;
+        text-align: center;
+        font-family: 'Inter', Arial, sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.48px;
+        width: 84px;
+        height: 57px;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .techs__items {
+        display: grid;
+        grid-template-columns: 84px 84px;
+        margin-top: 51px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .techs__container {
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-bottom: 60px;
+    }
+
+    .techs__title {
+        margin-left: 4px;
+        margin-right: 4px;
+        color: #FFF;
+        font-family: 'Inter', Arial, sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.72px;
+        padding-bottom: 28px;
+    }
+
+    .techs__subtitle {
+        color: #FFF;
+        text-align: center;
+        font-family: 'Inter', Arial, sans-serif;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -1.2px;
+        margin-top: 61px;
+    }
+
+    .techs__about {
+        color: #FFF;
+        text-align: center;
+        font-family: 'Inter', Arial, sans-serif;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: -0.44px;
+        display: flex;
+        width: 292px;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .techs__items {
+        display: grid;
+        grid-template-columns: 84px 84px;
+        margin-top: 51px;
+    }
+
+
+}
+
+

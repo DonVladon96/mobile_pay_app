@@ -39,8 +39,8 @@ const SignInForm = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>{success ? success : "Welcome Back"}</h1>
-      <h2 className={styles.subtitle}>Please sign in to see the Profile.</h2>
+      <h1 className={styles.title}>{success ? success : "Добро пожаловать!"}</h1>
+      <h2 className={styles.subtitle}>Пожалуйста, авторизуйтесь, чтобы войти в профиль</h2>
 
       <form onSubmit={handleSubmit} className={styles.form}>
         <input
@@ -53,11 +53,11 @@ const SignInForm = () => {
         <input
           className={styles.input}
           type="password"
-          placeholder="Password"
+          placeholder="Пароль"
           name="password"
           required
         />
-        <button className={styles.button}>Login</button>
+        <button className={styles.button}>Войти</button>
         {error && (
           <span className="p-4 mb-2 text-lg font-semibold text-white bg-red-500">
             {error}
@@ -68,11 +68,11 @@ const SignInForm = () => {
         onClick={handleClick}
         className={styles.button + " " + styles.google}
       >
-        Login with Google
+        Войти через Google
       </button>
       <span className={styles.or}>- OR -</span>
       <Link className={styles.link} href="/register">
-        Create new account
+        Создать новый профиль
       </Link>
     </div>
   );

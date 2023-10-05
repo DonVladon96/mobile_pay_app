@@ -36,12 +36,12 @@ const RegisterForm = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Create an Account</h1>
-      <h2 className={styles.subtitle}>Please sign up to see the Profile.</h2>
+      <h1 className={styles.title}>Регистрация пользователя</h1>
+      <h2 className={styles.subtitle}>Пожалуйста, зарегистрируйтесь, чтобы увидеть профиль.</h2>
       <form onSubmit={handleSubmit} className={styles.form}>
         <input
           type="text"
-          placeholder="Username"
+          placeholder="Имя пользователя"
           required
           className={styles.input}
         />
@@ -53,16 +53,16 @@ const RegisterForm = () => {
         />
         <input
           type="password"
-          placeholder="Password"
+          placeholder="Пароль"
           required
           className={styles.input}
         />
-        <button className={styles.button}>Register</button>
-        {error && "Something went wrong!"}
+        <button className={styles.button}>Регистрация</button>
+        {error && "Что то пошло не так!"}
       </form>
-      <span className={styles.or}>- OR -</span>
+      <span className={styles.or}>- Или -</span>
       <Link className={styles.link} href="/signin">
-        Login with an existing account
+        Войти в аккаунт
       </Link>
     </div>
   );

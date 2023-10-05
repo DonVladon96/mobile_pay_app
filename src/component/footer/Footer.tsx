@@ -8,7 +8,7 @@ import Gmail from "../../Image/public/Gmail-logo.png";
 const Footer = () => {
   return (
     <footer className={styles.container}>
-      <div>My Application</div>
+      <div className={styles.contants}>Мои контакты</div>
       <div className={styles.social}>
         <Link href={"https://t.me/WhatIsLovekin"} target="_blank">
           <Image
