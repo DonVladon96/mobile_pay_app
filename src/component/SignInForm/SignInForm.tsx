@@ -41,6 +41,9 @@ const SignInForm = () => {
     <div className={styles.container}>
       <h1 className={styles.title}>{success ? success : "Добро пожаловать!"}</h1>
       <h2 className={styles.subtitle}>Пожалуйста, авторизуйтесь, чтобы войти в профиль</h2>
+      <p>Если вам лень регистрироваться, вы можете воспользоваться тестовым профилем</p>
+      <p>Email: test123@mail.ru</p>
+      <p>Пароль: test123@mail.ru</p>
 
       <form onSubmit={handleSubmit} className={styles.form}>
         <input

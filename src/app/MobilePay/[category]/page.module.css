@@ -54,3 +54,31 @@
     width: 64px;
     height: 64px;
 }
+
+.ButtonPay {
+    width: 96px;
+    height: 36px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    border-radius: 10px;
+    background: #303030;
+    box-sizing: border-box;
+    border: 0 solid #303030;
+    cursor: pointer;
+    transition: 0.4s;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.ButtonPay:hover {
+    cursor: pointer;
+    transition: .7s ease-in-out;
+    color: #000;
+    background-color: #2BE080;
+}

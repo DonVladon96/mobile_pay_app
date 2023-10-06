@@ -5,6 +5,7 @@ const MobilePay = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Выберите оператора мобильной связи</h1>
+      <p>Эта страница разработана эксклюзивно для компании Brave Developers в качестве тестового задания</p>
       <ul className={styles.navtab}>
       <Link className={styles.navtab__button} href="/MobilePay/MTS">
         <span>MTS</span>
