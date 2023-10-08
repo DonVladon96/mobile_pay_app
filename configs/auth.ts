@@ -49,7 +49,7 @@ export const authConfig: AuthOptions = ({
       },
     }),
   ],
-secret: "Don_Vladon_Super_Man",
+secret: process.env.NEXTAUTH_SECRET,
   pages: {
     signIn: '/signin',
     error: '/signin'

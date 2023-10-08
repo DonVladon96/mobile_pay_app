@@ -1,8 +1,8 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 import Image from "next/image";
-import Telegram from "../../Image/public/Telegram_logo.svg.webp";
-import Instagramm from "../../Image/public/inst.avif";
+import Telegram from "../../Image/public/telegram_logo.png";
+import Instagramm from "../../Image/public/instagram_logo.png";
 import Gmail from "../../Image/public/Gmail-logo.png";
 
 const Footer = () => {
@@ -13,8 +13,8 @@ const Footer = () => {
         <Link href={"https://t.me/WhatIsLovekin"} target="_blank">
           <Image
             src={Telegram}
-            width={15}
-            height={15}
+            width={30}
+            height={30}
             className={styles.icon}
             alt="Telegramm"
           />
@@ -23,8 +23,8 @@ const Footer = () => {
         <Link href={"https://instagram.com/don_vladon_"} target='_blank'>
           <Image
             src={Instagramm}
-            width={15}
-            height={15}
+            width={30}
+            height={30}
             className={styles.icon}
             alt="instagram"
           />
@@ -33,8 +33,8 @@ const Footer = () => {
         <Link href={"https://donvladon996@gmail.com"}>
         <Image
           src={Gmail}
-          width={15}
-          height={15}
+          width={30}
+          height={30}
           className={styles.icon}
           alt="Gmail"
         />

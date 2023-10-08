@@ -10,10 +10,10 @@ function AmountInputFunc() {
 
   const [value, setValue] = React.useState(0);
   const [suggests] = React.useState([
-    { currency: "RUR", minorUnits: 100, value: 900 },
-    { currency: "RUR", minorUnits: 100, value: 500 },
-    { currency: "RUR", minorUnits: 100, value: 100 },
-    { currency: "RUR", minorUnits: 100, value: 0 },
+    { currency: "RUR", value: 900 },
+    { currency: "RUR",  value: 500 },
+    { currency: "RUR",  value: 100 },
+    { currency: "RUR",  value: 0 },
   ]);
   // @ts-ignore
     const handleChange = (event, payload) => {
@@ -30,19 +30,22 @@ function AmountInputFunc() {
   return (
     <div className={styles.container}>
       <AmountInput
+      style={{ margin:10}}
         key='RUB'
         value={value}
         currency='RUB'
         onChange={handleChange}
-        hint={`value: ${value}`}
+        
         className={styles.input}
         maxLength={1000}
         integerLength={3}  
+        integersOnly={false}
+        bold={true}
       />
 
       <div style={{  border: "solid 2px green", borderRadius: '10px', padding: "10px" , opacity: '1' }} >
         {suggests.map((s) => (
-          <button key={s.value} onClick ={() => setValue(s.value as number)}>
+          <button key={s.value} onClick ={() => setValue(s.value as number*100)}>
             Установить {String(s.value)}
           </button>
         ))}
