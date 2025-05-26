@@ -1,8 +1,16 @@
+import WeAre from "../../../Image/public/gallery-4.jpg";
 export const items = {
 
     websites: [
       {
         id: 1,
+        title: "Wedding",
+        desc: "Приглашение на нашу свадьбу",
+        image: WeAre,
+        url: 'https://wedding-va.vercel.app'
+      },
+      {
+        id: 2,
         title: "Статичный сайт",
         desc: "Создание статичного сайта для тренировки верстки и БЭМ методологии",
         image:
@@ -10,7 +18,7 @@ export const items = {
         url: 'https://donvladon96.github.io/how-to-learnPablic/'
       },
       {
-        id: 2,
+        id: 3,
         title: "Путешествие по России",
         desc: "Настоящая страна не в выпусках новоcтей, а здесь. В данной работе я тренировал навыки адаптивной верстки для различных размеров экранов",
         image:
@@ -18,7 +26,7 @@ export const items = {
           url: 'https://donvladon96.github.io/russian-travel/'
       },
       {
-        id: 3,
+        id: 4,
         title: "Проект МЕСТО",
         desc: "Mesto: интерактивная страница, куда можно добавлять фотографии, удалять их и ставить лайки. Выполнен с использованием библиотеки React и разработкой Backend сервера на Node Js",
         image:
