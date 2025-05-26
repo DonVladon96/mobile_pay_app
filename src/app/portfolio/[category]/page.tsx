@@ -9,7 +9,7 @@ interface Item {
   id: number;
   title: string;
   desc: string;
-  image: string;
+  image: any;
   url: string;
 }
 
@@ -50,7 +50,7 @@ const Category: React.FC<{ params: { category: Categories } }> = ({
          </div>
        </div>
         ))}
-     
+
     </div>
   );
 };
