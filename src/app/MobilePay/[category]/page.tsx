@@ -6,7 +6,6 @@ import { notFound } from "next/navigation";
 import AmountInputFunc from "@/component/AmountInput/AmountInput";
 import MobilePayForm from "@/component/MobilePayForm/MobilePayForm";
 import { useRouter } from "next/navigation";
-import icon from '../../../Image/public/back-icon.png'
 import ButtonBack from "@/component/ButtonBack/ButtonBack";
 import { useState } from "react";
 import Popup from "@/component/Popup/Popup";
@@ -50,7 +49,7 @@ const Category: React.FC<CategoryProps> = ({ params }) => {
 
   const handleClose = () => {
     setIsOpen(false);
-  
+
   }
 
   const handleClick = async () => {
